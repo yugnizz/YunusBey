@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galatasaray Üniversitesi</title>
+
+  <style>
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+      font-size: 26px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="yukleniyor">
+    Galatasaray Üniversitesi<br><br>
+    Yükleniyor, lütfen bekleyiniz…
+  </div>
+
+  <img id="troll" src="foto.jpg" alt="Galatasaray Üniversitesi">
+
+  <script>
+    setTimeout(function () {
+      document.getElementById("yukleniyor").style.display = "none";
+      document.getElementById("troll").style.display = "block";
+      document.title = "Galatasaray Üniversitesi";
+    }, 2500);
+  </script>
+
+</body>
+</html>
