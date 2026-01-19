@@ -1,1 +1,1 @@
-# YunusBey
+# Galatasay Üniversitesi
